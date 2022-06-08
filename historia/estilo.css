@@ -1,0 +1,315 @@
+{}
+*, *::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --bordeaside: #83c8eb;
+    --asidecolor1: hsl(195 100% 45%);
+    --as3a: #091677;
+    --as3b: #447EA7;    
+    --as3c: #447EA7;
+    --azul: #000888;
+    --r1: #091677;    
+    --r2: #909393;
+    --r3: #03b3b9;
+    --r4: #c00307;
+}
+
+body {   
+    max-width: 1218px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: roboto1, sans-serif;
+    font-size: 14px;    
+}
+
+header {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(../imgs2/fondo1.jpg);
+    margin-bottom: 2px;
+    padding: 0 15px 0 27px;
+}
+
+img {
+    display: block;
+}
+
+    .logo img{       
+        width: 100%        
+    }
+
+    .trazo img{        
+        width: 100%;
+    }
+
+
+.envase {   
+    display: flex;
+    background: #EDEDED;
+    margin: 2px 0;    
+}
+
+.contenido {
+    width: 73%;    
+    border-right: 2px solid #FFF;
+    padding: 10px;
+}
+
+.sect1 {        
+    background: #FFFFFF;    
+    margin-bottom: 2px;
+    border-top: 1px solid #D1D1D1;
+    border-left: 1px solid #D1D1D1;
+    box-shadow: 1px 1px 1px lightslategray;    
+}
+
+h1 {
+    padding: 0 10px;
+    height: 48px;        
+    font-size: 14px;
+    font-family: roboto3;
+    font-weight: 500;
+    letter-spacing: 0.02em;         
+    border-bottom: 1px solid #C6C6C6;    
+    position: relative;       
+    white-space: pre; 
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display: flex;
+    align-items: center;
+}
+
+        .flechita4 {                  
+            margin-right: 2px;            
+        }
+
+        .marcador {           
+            width: 18%;                        
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            border-left: 8px solid transparent;
+            border-bottom: 4px solid var(--azul); 
+        }       
+
+        .flechita5 {           
+            position: absolute;            
+            right: 10px;                   
+        }
+
+    h2 {
+        display: flex;
+        align-items: center;        
+        font-size: 14px;
+        font-family: roboto3;
+        font-weight: 500;
+        width: 40%;       
+        padding: 12px 0;
+        border-bottom: 1px solid #C6C6C6;
+        margin-left: 15px;        
+    }
+
+    .subflechita {                
+        margin-right: 6px;
+        margin-bottom: 2px;
+    }
+
+p {   
+   letter-spacing: 0.0em;
+   line-height: 1.5em;
+   padding:10px 15px 0 15px;           
+}
+
+.articulo {
+    text-align: justify;
+    color: #222;
+/*    color: #424242;*/
+}
+
+/*--------estilos de confoto--------*/
+.contfoto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    position: relative;
+}
+    .cuadro {
+        width: 73%;
+        margin-right: 15px;
+        position: relative;
+    }
+
+    .foto {
+        width: 100%;        
+    }
+
+    [class^="datos"] {
+        width: 27%;
+        padding: 10px;
+        font-size: 12px;
+        border: 2px solid;
+        border-radius: 3px;
+        color: lightslategrey;
+    }
+
+        .info, #checkinfo1, #checkinfo2, #checkinfo3, #checkinfo4, #checkinfo5 {
+            display: none;
+        }
+
+/*--------estilos de confoto--------*/
+
+
+
+
+
+/*=====*/
+
+
+@media (max-width:1242px) {
+    
+    .envase {
+        margin: 0;
+    }
+    
+    .contenido {
+        border: 0;
+        padding-top: 0;
+    }   
+    
+}
+
+
+@media (max-width:1000px) {
+    
+      
+    
+}
+
+
+
+@media (max-width:900px) {
+    
+    header {
+        display: none;
+    }
+    
+    .sect1 {
+        border-top: 1px solid #D1D1D1;
+        border-left: 1px solid #D1D1D1;
+    }
+    
+    h1 {               
+        padding-right: 30px;        
+    }
+    
+    h2 {
+        width: 60%;
+        margin-left: 10px;
+    }
+    
+    p {
+        padding: 10px 10px 0 10px;
+    } 
+    
+    .envase {        
+       position: relative;
+       top: 60px;       
+       flex-direction: column;
+       spadding-top: 10px; 
+    }
+    
+    .contenido {
+        width: 100%;
+        position: relative;                
+    }
+    
+    footer {
+        top:60px !important;
+    }
+  
+}
+
+
+
+@media (max-width:480px){    
+        
+    /*--------estilos de confoto--------*/
+    .contfoto{
+        padding: 0 10px;
+    }
+    
+    .cuadro {
+        width: 100%;
+        margin-right: 0;        
+    }    
+    
+    [class^="datos"] {    
+        width: 70%;        
+        color: #FFF;
+        background: rgba(00, 00, 88, .6);        
+        border: 2px solid #FFF;        
+        position: absolute;
+        padding: 8px;
+        bottom: 6px;
+        left: 15px;
+        transform: scale(0);        
+        transition: all .5s;
+    }
+    
+    .info {
+        cursor: pointer;
+        width: 38px;
+        height: 38px;
+        background: rgba(00, 00, 88, .85);
+        font-size: 10px;
+        color: #FFF;        
+        border: 2px solid #FFF;
+        border-radius: 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 6px;
+        left: 15px;        
+    }
+    
+            .info:hover {
+                background: rgba(00, 00, 88, 1);
+            }
+    
+            .info img {
+                width: 19px;                
+            }
+    
+            #checkinfo1:checked ~ .datos1 {
+                transform: scale(1)
+            }
+    
+            #checkinfo2:checked ~ .datos2 {
+                transform: scale(1)
+            }
+    
+            #checkinfo3:checked ~ .datos3 {
+                transform: scale(1)
+            }
+    
+            #checkinfo4:checked ~ .datos4 {
+                transform: scale(1)
+            }
+    
+            #checkinfo5:checked ~ .datos5 {
+                transform: scale(1)
+            }
+    
+    
+    /*--------estilos de confoto--------*/
+}

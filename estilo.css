@@ -13,7 +13,7 @@
     --as3b: #447EA7;    
     --as3c: #447EA7;
     --azul: #000888;
-    
+    --negro: #000000;
     --c1: #091566;
     /*    --c1: #009bdb;*/
     --r1: #091677;    
@@ -31,14 +31,13 @@ body {
 }
 
 header {
+    background: linear-gradient(#000000,#091677);
     height: 150px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-image: url(imgs2/fondo1.jpg);
+    justify-content: space-between;    
     margin-bottom: 2px;
-    padding: 0 15px 0 27px;
-    opacity: .
+    padding: 0 15px 0 27px;    
 }
 
 img {
@@ -138,8 +137,7 @@ img {
             background: var(--c1);
             position: absolute;
             bottom: 40px;
-            left: 32%;
-            opacity: .;
+            left: 32%;            
             box-shadow: 18px 16px 0px rgba(200, 200, 200, .7);
         }
 
@@ -196,7 +194,6 @@ img {
     }
 
     .div3 p {       
-       color: ;
        padding: 10px 10px 0 10px;
        text-align: justify;
        line-height: 1.6em;        

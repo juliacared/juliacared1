@@ -27,11 +27,11 @@ body {
 }
 
 header {
+    background: linear-gradient(#000000,#091677);
     height: 150px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-image: url(../imgs2/fondo1.jpg);
+    justify-content: space-between;    
     margin-bottom: 2px;
     padding: 0 15px 0 27px;
 }
@@ -169,8 +169,7 @@ dialog {
     max-width: 100%;
 }
 
-.botonesx1 {    
-}
+
 /*---h1---*/
 
 h2 {
@@ -433,10 +432,8 @@ h2 {
     
     .contmi1 {
         width: 100%;
-    }
-    
-    .contmi1 p {        
     }    
+       
     
     .botonesx1 {
         top: auto;

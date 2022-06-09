@@ -27,11 +27,11 @@ body {
 }
 
 header {
+    background: linear-gradient(#000000,#091677);
     height: 150px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-image: url(../imgs2/fondo1.jpg);
+    justify-content: space-between;    
     margin-bottom: 2px;
     padding: 0 15px 0 27px;
 }
@@ -83,8 +83,6 @@ section {
 }
 
 .articulo p {   
-   letter-spacing: ;
-   font-size: px;
    line-height: 1.5em;
    padding: 10px 15px 9px 15px;
    text-align: justify; 

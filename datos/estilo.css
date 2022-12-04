@@ -1,0 +1,44 @@
+details {   
+    padding: 10px;    
+}
+
+summary {    
+    margin-right: auto;
+    margin-left: auto;    
+}
+
+.himno {    
+    text-align: center;
+    line-height: 1.6em;    
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+/*
+    background-image: url(../imgs2/escudo1.png);
+    background-size: 270px;
+    background-repeat: no-repeat;
+    background-position: center;   
+*/
+}
+
+.himno span {   
+    font-size: 14px;
+}
+
+.doscolum {    
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+
+
+
+@media (max-width:600px){
+    
+    .doscolum {    
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -moz-column-count: 1; /* Firefox */
+        column-count: 1;
+    }
+    
+}

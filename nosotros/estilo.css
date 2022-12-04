@@ -1,0 +1,12 @@
+.articulo img {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 8px;
+}
+
+.subtitulo{
+    width: 265px;
+}
+
+

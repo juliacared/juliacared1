@@ -1,0 +1,112 @@
+.subtitulo{
+    width: 250px;
+}
+
+/*--------estilos de confoto--------*/
+.contfoto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    position: relative;
+}
+    .cuadro {
+        width: 73%;
+        margin-right: 15px;
+        position: relative;
+    }
+
+    .foto {
+        width: 100%;        
+    }
+
+    [class^="datos"] {
+        width: 27%;
+        padding: 10px;
+        font-size: 13px;
+        line-height: 1.4em;
+        border: 3px solid;
+        border-radius: 3px;
+        color: #333333;
+    }
+
+        .info, #checkinfo1, #checkinfo2, #checkinfo3, #checkinfo4, #checkinfo5 {
+            display: none;
+        }
+/*--------estilos de confoto--------*/
+
+
+
+@media (max-width:600px){    
+        
+    /*--------estilos de confoto--------*/
+    .contfoto{
+        padding: 0 10px;
+    }
+    
+    .cuadro {
+        width: 100%;
+        margin-right: 0;        
+    }    
+    
+    [class^="datos"] {    
+        width: 75%;        
+        color: #FFF;
+        background: var(--t2);        
+        border: 2px solid #FFF;        
+        position: absolute;
+        padding: 8px;
+        bottom: 6px;
+        right: 15px;
+        transform: scale(0);        
+        transition: all .5s;
+    }
+    
+    .info {
+        cursor: pointer;
+        width: 38px;
+        height: 38px;
+        background: var(--n);
+        font-size: 10px;
+        color: #FFF;        
+        border: 2px solid #FFF;
+        border-radius: 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 6px;
+        left: 15px;        
+    }
+    
+            .info:hover {
+                background: var(--t3);
+            }
+    
+            .info img {
+                width: 19px;                
+            }
+    
+            #checkinfo1:checked ~ .datos1 {
+                transform: scale(1)
+            }
+    
+            #checkinfo2:checked ~ .datos2 {
+                transform: scale(1)
+            }
+    
+            #checkinfo3:checked ~ .datos3 {
+                transform: scale(1)
+            }
+    
+            #checkinfo4:checked ~ .datos4 {
+                transform: scale(1)
+            }
+    
+            #checkinfo5:checked ~ .datos5 {
+                transform: scale(1)
+            }    
+    /*--------estilos de confoto--------*/
+}

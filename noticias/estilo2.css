@@ -1,0 +1,65 @@
+{}
+*, *::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --bordeaside: #83c8eb;
+    --asidecolor1: hsl(195 100% 45%);
+    --as3a: #091677;
+    --as3b: #447EA7;    
+    --as3c: #447EA7;
+    --azul: #000888;
+    --r1: #091677;    
+    --r2: #909393;
+    --r3: #03b3b9;
+    --r4: #c00307;
+}
+
+body {   
+    
+    margin-left: auto;
+    margin-right: auto;    
+    font-family: roboto1, sans-serif;
+    font-size: 13.4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enviado {
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5em;
+    margin: 40px 10px 20px;
+}
+
+.contbotones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+img {
+    max-width: 100%;
+}
+.contbotones a {
+    width: 150px;
+    display: block;   
+    text-decoration: none;
+    white-space: pre;
+    color: inherit;    
+    padding: 10px;
+    margin: 20px;
+    border-top: 1px solid #D1D1D1;
+    border-left: 1px solid #D1D1D1;
+    box-shadow: 1px 1px 1px lightslategray;
+    
+}
+
+.contbotones a:hover {
+    background: var(--r1);
+    color:#FFF;
+}

@@ -1,0 +1,40 @@
+
+section {        
+    background: var(--f4);   
+    margin-bottom: 20px ;
+    padding: 18px 15px 4px 15px;
+    border: 1px solid #D1D1D1;    
+}
+
+
+section:last-child {
+        margin-bottom: 0px;
+    }
+
+.respaldo {
+    max-width: 420px;   
+}
+
+.articulo {
+    padding: 10px 13px 13px 13px;
+}
+
+.articulo a {
+    
+    font-family: roboto2;
+}
+
+.articulo p {  
+   padding: 5px 0 5px 0;    
+}
+
+.articulo ul {
+    padding: 5px 0px 0px 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;   
+}
+
+.articulo li {    
+    line-height: 1.6em;
+    margin: 2px 0 6px 0;    
+} 

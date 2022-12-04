@@ -1,0 +1,35 @@
+.tablero1 {
+    background-color: #FFFFFF;
+    background-image: url(../imgs2/fondo5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:70%;    
+    max-width: 440px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;    
+    border: 10px solid var(--c10);
+    border-top: 12px solid var(--c10);
+    border-bottom: 11px solid var(--c10);
+    box-shadow: 2px 2px 3px lightslategray;
+    position: relative;
+}
+    
+.tablero2 {
+    background-color: #FFFFFF;
+    background-image: url(../imgs2/fondo5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:70%;    
+    max-width: 440px;   
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;    
+    border: 10px solid var(--c10);
+    border-top: 12px solid var(--c10);
+    border-bottom: 11px solid var(--c10);
+    box-shadow: 2px 2px 3px lightslategray;    
+}
+    

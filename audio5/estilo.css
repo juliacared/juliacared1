@@ -1,0 +1,143 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {   
+    --celeste: #35A2DA;    
+    --as3a: #4Cc;
+    --as3b: #55C1FA;    
+}
+
+body {
+    max-width: 1122px;       
+    margin-left: auto;
+    margin-right: auto;
+    font-family: roboto1, sans-serif;
+    font-size: 13px;
+}
+
+.titulo { 
+    background: rgba(0, 0, 0, .85);
+    max-width: 320px;
+    height: 58px;    
+    color: #FFFFFF;
+    margin-right: auto;
+    margin-left: auto;
+    border: 12px solid #444;
+    border-bottom: 0;
+    font-size: 13px;       
+    font-weight: 500;    
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    box-shadow: inset 1px 1px 2px rgba(255,255,255,.3), inset -2px -2px 4px rgba(0,0,0,.5), 4px 5px 5px rgba(0,0,0,.1);
+}
+
+    .titulo img {
+        display: inline;        
+        margin-right: 6px;
+        margin-bottom: 2px;
+    }
+
+section {
+    max-width: auto;    
+    background: #FFF;        
+}
+
+#playlist, #player {    
+    max-width: 320px; /* Ancho de todo el contenedor */
+    margin:  auto;
+    display: block;
+    
+}
+
+#player {
+    /* Imagen de fondo del primer contenedor */
+    background: url(../imgs2/fondoaudio.jpg);    
+    background-size: cover;
+    background-position: 0px 195px;
+    border: 12px solid #444444;    
+    padding: 10px 5px 6px 6px;
+    border-bottom: 0;
+    text-align: center;    
+    position: relative;
+    box-shadow: inset 3px 3px px rgba(255,255,255,.3), inset -2px -2px 4px rgba(0,0,0,.5), 4px 5px 5px rgba(0,0,0,.1);
+    
+}
+
+audio {    
+    width: 100%; /* Ancho del reproductor */
+    height: 45px;
+    margin: 0 auto;
+    display: inline-block;    
+}
+
+#player:after {
+    /* Imagen animada */
+    content: url(../imgs2/equalizador.gif);
+    padding-left: 10px;
+}
+
+#playlist {
+    display: block;    
+    text-align: left;
+    font-family: roboto1, sans-serif;    
+    font-size: 13.5px; /* Estilos de fuente */
+    font-weight: normal;      
+}
+
+    .contli {
+        border: 12px solid #444;
+        border-bottom: 14px solid #444;        
+        height: 293px;
+        overflow-x: hidden;
+        background-image: url(../imgs2/musica2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;        
+    }
+
+#playlist li {    
+    background: rgba(0, 0, 0, .8);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;   
+    border: 1px solid #222;
+    border-bottom: 1px solid #444;
+    white-space: pre; 
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+#playlist li a {    
+    height: 36px;
+    color: #ccc; /* Color de las canciones */
+    padding: 7.4px;
+    padding-left: 6px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;     
+}
+
+#playlist li a:hover{
+    background:rgba(0, 0, 0,.3);    
+    text-decoration: none;
+    color:#FFF;    
+}
+
+#playlist .active a {
+    color: var(--celeste); /* Color de la canción activa */
+    font-family:roboto1, sans-serif;       
+    text-decoration: none;
+}
+
+#playlist .active a:before {
+    content: "\25B6";   
+    font-style: normal;
+    padding-right: 4px;   
+}
+
+#playlist .active a:hover {
+    color: var(--celeste); /* Color de la canción activa al pasar el cursor */
+}
+/*https://lapendrivedetony.blogspot.com/2017/03/multiples-canciones-playlist-en-html5.html*/

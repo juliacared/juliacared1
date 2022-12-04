@@ -1,0 +1,420 @@
+.envase {    
+    padding: 0 20px 20px 0px;         
+}
+
+.sect1 {    
+    width: 100%;        
+    position: relative;
+    z-index: 3;
+    display: flex;     
+}
+
+    .franja1 {
+        background-color: var(--c1); 
+        width: 100%;
+        height: 60px;
+        padding: 1px;
+        position: absolute;
+        top: 40px;
+        z-index: -1;        
+    }
+
+        .juliaca {
+            height: 100%;
+            padding-right: 15%;
+            color:#FFFFFF;
+            font-family: great;
+            font-size: 32px;
+            font-weight: 500;
+            display: flex;                
+            justify-content: flex-end;
+            align-items: center;           
+        }
+
+    .franja2 {
+       background-color: var(--c1);
+        width: 140px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 80px;
+        z-index: -2 
+    }
+
+    .div1 {
+        width: 60%;
+        padding: 20px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .div1 img {
+            width: 92%;
+            display: block;        
+        }
+
+    .div2 {
+        width: 50%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+    }
+
+        .div2::after{    
+            content: "";
+            display: block;
+            width: 36px;
+            height: 36px;
+            background: var(--c1);
+            position: absolute;
+            bottom: 40px;
+            left: 32%;            
+            box-shadow: 18px 16px 0px rgba(200, 200, 200, .7);
+        }
+
+        .div2 img {
+            max-width: 42px;
+            width: 11%;
+            transform: rotate(-30deg);
+            margin-top: 80px;
+            margin-right: 25%;
+        }
+
+        .ciudad2 {     
+            font-family: great;            
+            font-size: 26px;
+            color: #000;            
+            position: absolute;
+            right: 23%;
+            top: 60%     
+        }
+
+
+.sect2 {    
+    width: 100%;    
+    padding-left: 20px;
+    display: flex;
+    position: relative;
+}
+
+    .div3 {
+        background-color: var(--f3);        
+        width: 60%;    
+        padding: 0 13px;
+        border: 4px solid var(--c1);        
+    }
+
+    h2 {        
+        padding: 0 10px;
+        height: 60px;
+        margin-left: 0;
+        font-size: 16px;       
+        letter-spacing: 0.03em;    
+        position: relative;
+        border-bottom: 4px solid var(--c1);   
+        white-space: pre;
+        overflow: hidden;
+        text-overflow: ellipsis;                    
+    }
+
+        .flecha1 {
+            background-color: var(--g2);
+            width: 14px;
+            height: 16px;    
+            clip-path: polygon(0 0, 50% 0, 100% 50%, 50% 100%, 0 100%, 50% 50%);   
+        }
+
+        .flecha1b{    
+            background-color: var(--c1);
+            width: 14px;
+            height: 16px;
+            clip-path: polygon(0 0, 50% 0, 100% 50%, 50% 100%, 0 100%, 50% 50%);
+            position: relative;
+            right: 4px;
+        }
+
+        .flecha2{
+            background-color: var(--g2);
+            width: 15px;
+            height: 14px;  
+            clip-path: polygon(50% 50%, 100% 0, 100% 50%, 50% 100%, 0 50%, 0 0);
+            position: absolute;
+            top: 12px;
+            right: 10px;
+        } 
+
+        .flecha2b{
+            background-color: var(--c1);
+            width: 15px;
+            height: 14px;  
+            clip-path: polygon(50% 50%, 100% 0, 100% 50%, 50% 100%, 0 50%, 0 0);
+            position: absolute;            
+            top: 22px;
+            right: 10px;
+        }
+
+    .div3 p {       
+       padding: 15px 5px 0 5px;
+       font-size: 16px;
+       text-align: justify;            
+    }            
+
+    .cont-minienlace {
+        display: flex;
+        align-items: center;       
+        margin-left: 8px;    
+    }
+
+    [class^="minienlace"] {        
+        background-color: var(--c1);
+        width: 32px;
+        height: 32px;
+        padding: 5px;
+        margin-left: 0;
+        margin-right: 13px;
+        border-radius: 25px;        
+        box-shadow: none;
+    }    
+        
+
+    .div4 {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 3;
+        padding-left: 20px;
+    }
+
+        .div4 img {
+/*            width: 77%;*/
+            width: 62%;
+            background-image: url(imgs2/estrellas.png)
+        }
+
+        .cont-temporal img {
+            width: 58%;
+            padding-top: 8px;
+        }
+
+
+.sect3 {    
+    width: 100%;    
+    position: relative;
+    overflow: hidden;
+}
+
+.franja3 {
+    background: var(--c1);
+    width: 140px;
+    height: 100%;
+    position: absolute;
+    left: 32%;
+}
+
+.franja4 {
+    background: var(--c1);    
+    width: 100%;
+    height: 60px;
+    position: absolute;    
+    left: 340px;
+    margin: auto;
+    top: 0;
+    bottom: 0;    
+}
+
+.contlike {    
+    padding: 20px;    
+}
+
+
+@media (max-width:1100px) { 
+    
+    .envase {
+        padding: 10px 0px 0px 0px;            
+    }
+    
+    .franja1 {
+        height: 50px;
+        top: 30px;
+    }
+    
+    .div1 {
+        padding-top: 22px
+    }
+    
+    .juliaca {
+        font-size: 28px;
+    }    
+    
+    aside {             
+        padding: 20px 13px;        
+    }
+
+}
+
+
+@media (max-width:650px) {
+    
+    .sect1 {
+        width: 100%;       
+    }    
+        
+            .juliaca {
+                padding-right: 10%;
+            }
+    
+        .franja2 {
+            width: 80px;
+            left: 45px;
+            left: 14%;
+        }
+    
+    .div1 {
+        width: 80%;
+        top: 60px;
+        margin-top: 80px;
+        padding: 18px 0 20px;        
+    }
+    
+        .div1 img {
+            max-width: 80%;        
+        }
+    
+    .div2 {
+        width: 20%       
+    }
+    
+        .div2::after {        
+            display: none;
+        }
+    
+        .div2 img {            
+            width: 50%;
+            max-width: 40px;
+            transform: rotate(0);                
+        }  
+        
+    
+    .sect2 {
+        flex-direction: column;
+        padding: 0 ;
+    }     
+    
+    
+    .div3 {
+        width: 92%;
+        margin-right: auto;
+        margin-left: auto;        
+    }
+    
+        h2 {            
+            font-size: 15px;
+        }
+    
+            .flechita5 {
+                right: 0
+            }
+    
+        .div3 p {
+            padding:  15px 0 0 0;
+            font-size: 15px;
+        }   
+    
+    .div4 {
+        width: 100%;        
+        justify-content: flex-start;        
+        padding: 0
+    }
+    
+        .ciudad2 {
+            display: none;            
+        }
+    
+        .div4 img {
+            width: 45%;
+            margin-left: 14%;
+            padding: 15px 0 15px 0;
+        }
+
+        .div4::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 50px;
+            background: var(--c1);
+            position: absolute;
+            bottom: 0px;       
+            z-index: -1;
+        }
+
+        .div4::after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 100%;
+            background: var(--c1);
+            position: absolute;            
+            right: 14%;           
+            z-index: -1;
+        }
+    
+        .franja3 {
+            display: none;
+        }
+    
+        .franja4 {            
+            display: none;
+        }
+    
+    .sect3 {                
+        position: relative;        
+        z-index: 2;        
+    }
+    
+    .sect3::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 100%;
+        background: var(--c1);
+        position: absolute;
+        right: 14%;
+        top: 0;
+        z-index: -1
+    }
+    
+}
+
+
+@media (max-width:420px) {
+    
+    .div1 img {
+        max-width: 100%;
+    }
+    
+    .div2 img {
+        width: 65%;
+    }
+    
+    h2 {
+        padding: 0 2px;
+    }
+    
+        .flecha2{            
+            right: 2px;
+        } 
+
+        .flecha2b{            
+            right: 2px;
+        }
+    
+    .div4 img {
+            width: 55%;
+            margin-left: 10%;           
+        }
+}
